@@ -1,6 +1,3 @@
-/*globals console require export */
-/*jshint esversion: 6 */
-
 const data = {
     "01.01.2015": 33.3,
     "02.01.2015": 20.2,
@@ -88,7 +85,7 @@ sortedData = (function trasnformAndSortData() {
 sortedData = (function dayTempDifference() {
     let valueDiffrence;
 
-    for (let i = 0; i < sortedData.length; i += 1) {
+    for (i = 0; i < sortedData.length; i += 1) {
         if (i === 0) {
             sortedData[0].push(sortedData[0][1]);
         } else {
@@ -122,7 +119,7 @@ let dataPars = (function monthDayTextPrint() {
         monthNameBg,
         finalData = [];
 
-    for (let i = 0; i < data.length; i += 1) {
+    for (i = 0; i < data.length; i += 1) {
 
         weekDayBg = data[i][0].getDay();
         weekDayBg = weekDays[weekDayBg];
