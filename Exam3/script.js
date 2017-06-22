@@ -50,12 +50,12 @@ let compatibility = data["parts compatibility"];
 let newCompatibility = {};
 let dataTextForHtml = [];
 
-for (let dataA in compatibility) {
+for (dataA in compatibility) {
     newCompatibility[dataA] = compatibilityParsed(compatibility[dataA], dataArr);
     newCompatibility[dataA].push(reactorParse(dataA, dataArr));
 }
 
-for (let dataA in newCompatibility) {
+for (dataA in newCompatibility) {
     dataTextForHtml.push(displayData(newCompatibility[dataA]));
 }
 
@@ -93,8 +93,8 @@ function compatibilityParsed(nucliar, dataArr) {
 
 function reactorParse(dataA, dataArr) {
     let result;
-    for (let dataA in newCompatibility) {
-        for (let j = 0; j < dataArr.length; j += 1) {
+    for (dataA in newCompatibility) {
+        for (j = 0; j < dataArr.length; j += 1) {
             if (dataA.includes(dataArr[j].id)) {
                 result = dataArr[j];
                 break;
