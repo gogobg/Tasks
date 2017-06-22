@@ -1,0 +1,24 @@
+body, div, span, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-size: 30px;
+}
+
+.leftSideSelect{
+  float:left;
+}
+
+.rightSideSelect{
+  float:right;
+}
+
+div {
+  position: absolute;
+  top:50%;
+  width: 100%;
+  text-align: center;
+}
