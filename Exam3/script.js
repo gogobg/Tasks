@@ -120,7 +120,6 @@ function displayData(m) {
             }
         }
     }
-    console.log(dataText)
     return dataText;
 }
 
